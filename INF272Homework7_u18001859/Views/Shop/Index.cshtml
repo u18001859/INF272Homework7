@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>The CPU Shop!</h1>
+    <a href="@Url.Action("Part2", "Shop")"><span>Part 2</span></a>
+    <input id="BtnAdd" type="submit" value="Add" name="BtnAdd" />
+    <br />
+    <div>
+        <table>
+            <tr>
+                <th>CPU's</th>
+            </tr>
+            <tr>
+                <th>Item Name:</th>
+                <th>Description:</th>
+                <th>Price (R):</th>
+                <th>Quantity Available:</th>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <div>
+        <label id="lblSortButtons"></label>
+        <br />
+        <input id="BtnSortByName" type="button" value="SortByName" name="BtnSortByName" />
+        <input id="BtnSortByPrice" type="button" value="SortByPrice" name="BtnSortByPrice" />
+        <input id="BtnSortByQuantity" type="button" value="SortByQuantity" name="BtnSortByQuantity" />
+        <input id="BtnCountItems" type="button" value="HowManyItemsAreInTheList" name="BtnCountItems" />
+
+    </div>
+</body>
+</html>

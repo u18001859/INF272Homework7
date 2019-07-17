@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Part2</title>
+</head>
+<body>
+    <h1>Part 2!</h1>
+    <a href="@Url.Action("Index","Shop")"><span>Part1</span></a>
+    @using (Html.BeginForm("InsertData", "Shop"))
+    {
+
+        <div>
+            <label>Enter Name: </label>
+            <input id="txtName" type="text" name="txtNameP2" />
+            <br />
+            <label>Enter Description: </label>
+            <input id="txtDescription" type="text" name="txtDescriptionP2" />
+            <br />
+            <label>Enter Price: </label>
+            <input id="txtPrice" type="text" name="txtPriceP2" />
+            <br />
+            <label>Enter Quantity Available: </label>
+            <input id="txtQuantity" type="text" name="txtQuantityP2" />
+        </div>
+        <input id="BtnSave" type="submit" name="BtnSave" value="Save" />
+
+    }
+    <label>@ViewBag.Message</label>
+</body>
+</html>
